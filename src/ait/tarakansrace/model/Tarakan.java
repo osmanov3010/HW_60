@@ -18,6 +18,7 @@ public class Tarakan implements Runnable {
         return winnerName;
     }
 
+
     @Override
     public void run() {
         for (int i = 0; i < distance; i++) {
@@ -29,6 +30,11 @@ public class Tarakan implements Runnable {
             }
         }
 
+        setWinnerName();
+
+
+    }
+    public synchronized void setWinnerName() {
         if (winnerName == null) {
             winnerName = "tarakan #" + name;
         }
