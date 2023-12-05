@@ -2,7 +2,7 @@ package ait.tarakansrace.model;
 
 import java.util.Random;
 
-public class Tarakan extends Thread {
+public class Tarakan implements Runnable {
 
     private static Random random = new Random();
     private static String winnerName;
